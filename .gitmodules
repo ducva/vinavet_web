@@ -1,0 +1,3 @@
+[submodule "joomla/templates/vinavet"]
+	path = joomla/templates/vinavet
+	url = https://ducva@github.com/ducva/vinavet.git
