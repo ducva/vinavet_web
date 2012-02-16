@@ -1,0 +1,6 @@
+﻿1. Joomla Template
+1 template website thường bao gồm: 
+- mã HTML
+- CSS
+- Javascript
+- Images

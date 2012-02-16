@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<extension type="component" version="1.7.3" method="upgrade">
+	<name>CKEditor</name>
+		<creationDate>2012-01-25</creationDate>
+		<author>CKSource.com</author>
+		<authorUrl>http://cksource.com</authorUrl>
+		<copyright>Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved. For licensing, see LICENSE.html or	http://ckeditor.com/license</copyright>
+		<license>GPL</license>
+		<version>1.7.3</version>
+		<description>CKEditor component integrates CKEditor, a WYSIWYG online editor, with the link browser plugin and CKFinder configuration options.</description>
+
+		<installfile>admin/install_ckeditor.php</installfile>
+		<uninstallfile>admin/uninstall_ckeditor.php</uninstallfile>
+
+		<install>
+			<sql>
+				<file charset="utf8" driver="mysql">install_ckeditor.sql</file>
+			</sql>
+		</install>
+		<uninstall>
+			<sql>
+				<file charset="utf8" driver="mysql">uninstall_ckeditor.sql</file>
+			</sql>
+		</uninstall>
+
+			<languages>
+				<language tag="en-GB" client="site">language/en-GB/en-GB.plg_editors_ckeditor.ini</language>
+				<language tag="en-GB" client="site">language/en-GB/en-GB.plg_editors_ckeditor.sys.ini</language>
+				<language tag="en-GB" client="site">language/en-GB/en-GB.com_ckeditor.sys.ini</language>
+				<language tag="en-GB" client="site">language/en-GB/en-GB.com_ckeditor.ini</language>
+			</languages>
+
+		<files folder="site">
+			<filename>ckeditor.php</filename>
+			<filename>editor.php</filename>
+			<filename>index.html</filename>
+		</files>
+
+		<administration>
+			<menu img="components/com_ckeditor/images/ckeditor_ico16.png" link="option=com_ckeditor">COM_CKEDITOR_MENU_NAME</menu>
+			<files folder="admin">
+
+				<filename>index.html</filename>
+				<filename>admin/index.html</filename>
+				<filename>images/ckeditor_ico16.png</filename>
+				<filename>install_ckeditor.sql</filename>
+				<filename>uninstall_ckeditor.sql</filename>
+				<filename>install_ckeditor.php</filename>
+				<filename>uninstall_ckeditor.php</filename>
+				<filename>config/controller.php</filename>
+				<filename>config/config.php</filename>
+				<filename>config.xml</filename>
+				<filename>config/views/config/index.html</filename>
+				<filename>config/views/config/tmpl/default.php</filename>
+				<filename>config/views/config/tmpl/index.html</filename>
+				<filename>config/views/config/view.html.php</filename>
+				<filename>config/views/config/css/index.html</filename>
+				<filename>config/views/config/css/config.css</filename>
+				<filename>config/views/config/js/index.html</filename>
+				<filename>config/views/config/js/sortables.js</filename>
+				<filename>config/views/config/images/about.png</filename>
+				<filename>config/views/config/images/anchor.png</filename>
+				<filename>config/views/config/images/backgroundColor.png</filename>
+				<filename>config/views/config/images/bidiLeft.png</filename>
+				<filename>config/views/config/images/bidiRight.png</filename>
+				<filename>config/views/config/images/blockJustify.png</filename>
+				<filename>config/views/config/images/blockQuote.png</filename>
+				<filename>config/views/config/images/bold.png</filename>
+				<filename>config/views/config/images/bulletedList.png</filename>
+				<filename>config/views/config/images/button.png</filename>
+				<filename>config/views/config/images/centerJustify.png</filename>
+				<filename>config/views/config/images/checkbox.png</filename>
+				<filename>config/views/config/images/checkSpelling.png</filename>
+				<filename>config/views/config/images/copy.png</filename>
+				<filename>config/views/config/images/createDivContainer.png</filename>
+				<filename>config/views/config/images/cut.png</filename>
+				<filename>config/views/config/images/decreaseIndent.png</filename>
+				<filename>config/views/config/images/find.png</filename>
+				<filename>config/views/config/images/flash.png</filename>
+				<filename>config/views/config/images/font.png</filename>
+				<filename>config/views/config/images/fontSize.png</filename>
+				<filename>config/views/config/images/form.png</filename>
+				<filename>config/views/config/images/format.png</filename>
+				<filename>config/views/config/images/hiddenField.png</filename>
+				<filename>config/views/config/images/horizontalLine.png</filename>
+				<filename>config/views/config/images/icon.png</filename>
+				<filename>config/views/config/images/iframe.png</filename>
+				<filename>config/views/config/images/image.png</filename>
+				<filename>config/views/config/images/imageButton.png</filename>
+				<filename>config/views/config/images/increaseIndent.png</filename>
+				<filename>config/views/config/images/italic.png</filename>
+				<filename>config/views/config/images/leftJustify.png</filename>
+				<filename>config/views/config/images/link.png</filename>
+				<filename>config/views/config/images/maximize.png</filename>
+				<filename>config/views/config/images/newPage.png</filename>
+				<filename>config/views/config/images/numberedList.png</filename>
+				<filename>config/views/config/images/pageBreakPrinting.png</filename>
+				<filename>config/views/config/images/paste.png</filename>
+				<filename>config/views/config/images/pastePlainText.png</filename>
+				<filename>config/views/config/images/pasteWord.png</filename>
+				<filename>config/views/config/images/preview.png</filename>
+				<filename>config/views/config/images/print.png</filename>
+				<filename>config/views/config/images/radioButton.png</filename>
+				<filename>config/views/config/images/readmoreButton.png</filename>
+				<filename>config/views/config/images/redo.png</filename>
+				<filename>config/views/config/images/removeFormat.png</filename>
+				<filename>config/views/config/images/replace.png</filename>
+				<filename>config/views/config/images/rightJustify.png</filename>
+				<filename>config/views/config/images/save.png</filename>
+				<filename>config/views/config/images/selectAll.png</filename>
+				<filename>config/views/config/images/selectionField.png</filename>
+				<filename>config/views/config/images/showBlocks.png</filename>
+				<filename>config/views/config/images/smiley.png</filename>
+				<filename>config/views/config/images/source.png</filename>
+				<filename>config/views/config/images/spacer.png</filename>
+				<filename>config/views/config/images/specialCharacter.png</filename>
+				<filename>config/views/config/images/strike.png</filename>
+				<filename>config/views/config/images/styles.png</filename>
+				<filename>config/views/config/images/subscript.png</filename>
+				<filename>config/views/config/images/superscript.png</filename>
+				<filename>config/views/config/images/table.png</filename>
+				<filename>config/views/config/images/templates.png</filename>
+				<filename>config/views/config/images/textColor.png</filename>
+				<filename>config/views/config/images/textarea.png</filename>
+				<filename>config/views/config/images/textField.png</filename>
+				<filename>config/views/config/images/underline.png</filename>
+				<filename>config/views/config/images/undo.png</filename>
+				<filename>config/views/config/images/unlink.png</filename>
+				<filename>config/views/config/images/index.html</filename>
+				<filename>config/views/index.html</filename>
+
+				<filename>media/index.html</filename>
+				<filename>media/css/index.html</filename>
+				<filename>media/css/jquery/index.html</filename>
+				<filename>media/css/jquery/ckeditor/index.html</filename>
+				<filename>media/css/jquery/ckeditor/jquery-ui-1.8.9.custom.css</filename>
+				<filename>media/js/index.html</filename>
+				<filename>media/js/jquery/index.html</filename>
+				<filename>media/js/jquery/jquery-1.4.4.min.js</filename>
+				<filename>media/js/jquery/jquery-ui-1.8.9.custom.min.js</filename>
+				<filename>media/css/jquery/ckeditor/images/ui-bg_flat_75_ffffff_40x100.png</filename>
+
+				<filename>ckeditor.php</filename>
+				<filename>editor.php</filename>
+				<filename>index.html</filename>
+			</files>
+
+			<languages>
+				<language tag="en-GB">language/en-GB/en-GB.plg_editors_ckeditor.ini</language>
+				<language tag="en-GB">language/en-GB/en-GB.plg_editors_ckeditor.sys.ini</language>
+				<language tag="en-GB">language/en-GB/en-GB.com_ckeditor.sys.ini</language>
+				<language tag="en-GB">language/en-GB/en-GB.com_ckeditor.ini</language>
+			</languages>
+
+		</administration>
+	</extension>
