@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7.3" type="plugin" group="editors" method="upgrade">
+	<name>Editor - CKEditor</name>
+	<version>1.7.3</version>
+	<creationDate>2012-01-25</creationDate>
+	<author>CKSource</author>
+	<authorurl>http://cksource.com</authorurl>
+	<license>GPL</license>
+	<description>CKEDITOR_PLUGIN_DESCRIPTION</description>
+	<files>
+	<filename plugin="ckeditor">ckeditor.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_editors_ckeditor.ini</language>
+	</languages>
+</extension>
