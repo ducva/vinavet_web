@@ -1,0 +1,40 @@
+body {
+	background: url(../images/dev/background-html.png) repeat-x;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.container_24 {
+  background-image: url(../images/24_col.gif);
+}
+#header {
+	position:relative;
+	text-align:center;
+	background:url(../images/dev/background-logo2.gif) repeat-x center;
+	height:120px;
+}
+#logo {
+	position:absolute;
+	height:60px;
+	text-align:left;
+	top:30px;
+	left:0px;
+}
+
+#header-right {
+	position:absolute;
+	height:60px;
+	bottom:0px;
+	right:0px;
+}
+#navigation {
+	height:30px;
+}
+
+.site-title {
+	color:#FFF;
+	margin-bottom:0;
+}
+
+.header1 {
+	color:#FFF;
+
+}

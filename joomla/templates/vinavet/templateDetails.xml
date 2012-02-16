@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>vinavet</name>
+	<creationDate>25 November 2009</creationDate>
+	<author>Michael Vu</author>
+	<authorEmail>vuanhduc2685 at gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.0</version>
+	<description>TPL_VINAVET_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<folder>fonts</folder>
+		<folder>language</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>params.ini</filename>
+	</files>
+
+	<positions>
+		<position>debug</position>
+		<position>header</position>
+		<position>logo</position>
+		<position>navigation</position>		
+		<position>header-right</position>
+		<position>header-bottom</position>
+		<position>body-top</position>
+		<position>body-right</position>
+		<position>body-left</position>
+		<position>footer</position>
+	</positions>
+
+	<!-- 	For core templates, we also install/uninstall the language files in the core language folders.
+	-->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_vinavet.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_vinavet.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="sitetitle"  type="text" default=""
+					label="TPL_VINAVET_FIELD_SITETITLE_LABEL"
+					description="TPL_VINAVET_FIELD_SITETITLE_DESC"
+					filter="string" />
+				<field name="siteslogan" type="text" default=""
+					label="TPL_VINAVET_FIELD_SITESLOGAL_LABEL"
+					description="TPL_VINAVET_FIELD_SITESLOGAL_DESC"
+					filter="string"/>
+				<field name="logo" type="media"
+					label="TPL_VINAVET_FIELD_LOGO_LABEL" description="TPL_VINAVET_FIELD_LOGO_DESC" />
+				<field name="sitedescription"  type="text" default=""
+					label="TPL_VINAVET_FIELD_DESCRIPTION_LABEL"
+					description="TPL_VINAVET_FIELD_DESCRIPTION_DESC"
+					filter="string" />					
+					
+				<field name="wrapperSmall"  class="validate-numeric" type="text" default="53"
+					label="TPL_VINAVET_FIELD_WRAPPERSMALL_LABEL"
+					description="TPL_VINAVET_FIELD_WRAPPERSMALL_DESC"
+					filter="integer" />
+
+				<field name="wrapperLarge"  class="validate-numeric" type="text" default="72"
+					label="TPL_VINAVET_FIELD_WRAPPERLARGE_LABEL"
+					description="TPL_VINAVET_FIELD_WRAPPERLARGE_DESC"
+					filter="integer" />
+
+				
+
+				<field name="navposition" type="list" default="center"
+					label="TPL_VINAVET_FIELD_NAVPOSITION_LABEL"
+					description="TPL_VINAVET_FIELD_NAVPOSITION_DESC"
+					filter="word"
+				>
+					<option value="center">TPL_VINAVET_OPTION_AFTER_CONTENT</option>
+					<option value="left">TPL_VINAVET_OPTION_BEFORE_CONTENT</option>
+				</field>
+
+				<field name="templatecolor" type="list" default="nature"
+					label="TPL_VINAVET_FIELD_TEMPLATECOLOR_LABEL"
+					description="TPL_VINAVET_FIELD_TEMPLATECOLOR_DESC"
+					filter="word"
+				>
+					<option value="nature">TPL_VINAVET_OPTION_NATURE</option>
+					<option value="personal">TPL_VINAVET_OPTION_PERSONAL</option>
+				</field>
+
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
