@@ -91,19 +91,19 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
             <div id="body-content" class="container_24">
      
                 <div id="body-left" class="grid_16">
-                	<img src="http://placehold.it/630x500"/>    
+                	 
                     <jdoc:include type="modules" name="body-left" />        
                 </div>
                 <!-- end of body-left -->
                 <div id="body-right" class="grid_8">
-                	<img src="http://placehold.it/310x500"/>    
+                	
                     <jdoc:include type="modules" name="body-right" />  
                 </div>
                 <!-- end of body-right -->
             </div>
             <!-- end of body-content -->
             <div id="footer" class="container_24">
-            	<img src="http://placehold.it/960x120"/>      
+            	 
                 <jdoc:include type="modules" name="footer" />
             </div>
             <!-- end of footer -->
